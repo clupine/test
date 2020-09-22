@@ -43,8 +43,6 @@ network:
 product:
   authId: metabuild
   authPassword: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
-server:
-  port: 6702
   ssl:
     key-alias: spring
     key-store: classpath:keystore.p12
