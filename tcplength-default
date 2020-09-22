@@ -1,0 +1,61 @@
+#-----------------------------------------
+# TCP LENGTH Adaptor Configuration
+#-----------------------------------------
+network.adaptor.tcp-message.length.enabled : true
+network.adaptor.tcp-message.length.hex-mode : false
+network.adaptor.tcp-message.length.remote-hosts[0] : 127.0.0.1
+network.adaptor.tcp-message.length.remote-ports[0] : 8001
+network.adaptor.tcp-message.length.remote-hosts[1] : 127.0.0.1
+network.adaptor.tcp-message.length.remote-ports[1] : 8002
+network.adaptor.tcp-message.length.bind-ports[0] : 8101
+network.adaptor.tcp-message.length.bind-ports[1] : 8102
+network.adaptor.tcp-message.length.max-frame-length : 4096
+network.adaptor.tcp-message.length.length-field-offset : 0
+network.adaptor.tcp-message.length.length-field-length : 4
+network.adaptor.tcp-message.length.length-adjustment : 0
+network.adaptor.tcp-message.length.initial-bytes-to-strip : 0
+network.adaptor.tcp-message.length.string-value-use : true
+network.adaptor.tcp-message.length.reconnect-sec : 30
+network.adaptor.tcp-message.length.recv-task-count : 10
+network.adaptor.tcp-message.length.extractor.message-id=14
+network.adaptor.tcp-message.length.extractor.message-id-len=10
+network.adaptor.tcp-message.length.extractor.work-code=4
+network.adaptor.tcp-message.length.extractor.work-code-len=10
+network.adaptor.tcp-message.length.request-wait-time-out-sec=60
+network.adaptor.tcp-message.length.request-usage-size=10000
+network.adaptor.tcp-message.length.src-org=S001
+network.adaptor.tcp-message.length.trg-org=KFTC
+
+#-----------------------------------------
+# InterfaceId Configuration
+#-----------------------------------------
+interface-id.0210300001=TCP_KFTC_00002
+interface-id.0210300002=TCP_KFTC_00004
+interface-id.0210300003=TCP_KFTC_00006
+interface-id.0210300004=TCP_KFTC_00008
+interface-id.0210300005=TCP_KFTC_00010
+
+
+#-----------------------------------------
+# Call Configuration
+#-----------------------------------------
+network.adaptor.tcp-message.length.call-type=HTTP
+network.adaptor.tcp-message.length.call-base-path=https://127.0.0.1:6602
+
+#-----------------------------------------
+# Logging Configuration
+#-----------------------------------------
+network.adaptor.tcp-message.length.logging-base-path : https://127.0.0.1:6800
+network.adaptor.tcp-message.length.logging-task-count : 4
+
+#-----------------------------------------
+# Rest Configuration
+#-----------------------------------------
+server.port : 6702
+
+#-----------------------------------------
+# Adaptor Configuration
+#-----------------------------------------
+spring.pid.file : C:/mesim_mci/im/pid/TCP_LENGTH_MSG_01_tmp
+spring.autoconfigure.exclude : org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
