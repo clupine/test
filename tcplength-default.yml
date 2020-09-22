@@ -1,15 +1,9 @@
-product:
-  authId: metabuild
-  authPassword: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
-server:
-  ssl:
-    key-alias: spring
-    key-store: classpath:keystore.p12
-    key-store-password: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
-    key-store-type: PKCS12
-  tomcat:
-    max-http-post-size: 100000000
-    max-swallow-size: 100000000
+interface-id:
+  '0210300001': TCP_KFTC_00002
+  '0210300002': TCP_KFTC_00004
+  '0210300003': TCP_KFTC_00006
+  '0210300004': TCP_KFTC_00008
+  '0210300005': TCP_KFTC_00010
 network:
   adaptor:
     tcp-message:
@@ -46,16 +40,21 @@ network:
         src-org: S001
         string-value-use: true
         trg-org: KFTC
+product:
+  authId: metabuild
+  authPassword: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
 server:
   port: 6702
+  ssl:
+    key-alias: spring
+    key-store: classpath:keystore.p12
+    key-store-password: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
+    key-store-type: PKCS12
+  tomcat:
+    max-http-post-size: 100000000
+    max-swallow-size: 100000000
 spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   pid:
     file: C:/mesim_mci/im/pid/TCP_LENGTH_MSG_01_tmp
-interface-id:
-  '0210300001': TCP_KFTC_00002
-  '0210300002': TCP_KFTC_00004
-  '0210300003': TCP_KFTC_00006
-  '0210300004': TCP_KFTC_00008
-  '0210300005': TCP_KFTC_00010
