@@ -59,4 +59,3 @@ server:
   tomcat:
     max-http-post-size: 100000000
     max-swallow-size: 100000000
-
