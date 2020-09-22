@@ -3,8 +3,8 @@ network:
     tcp-message:
       length:
         bind-ports:
-        - 8101
-        - 8102
+        - 9101
+        - 9102
         call-base-path: https://127.0.0.1:6602
         call-type: HTTP
         enabled: true
