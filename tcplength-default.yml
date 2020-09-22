@@ -47,15 +47,3 @@ interface-id:
   '0210300003': TCP_KFTC_00006
   '0210300004': TCP_KFTC_00008
   '0210300005': TCP_KFTC_00010
-product:
-  authId: metabuild
-  authPassword: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
-server:
-  ssl:
-    key-alias: spring
-    key-store: classpath:keystore.p12
-    key-store-password: ENC(jUZV7x/Gvtdp3fuVkf2Zi2kll8Roso/E742QqUdsnYG3I06aZspyWgc+ZZpSGSj2)
-    key-store-type: PKCS12
-  tomcat:
-    max-http-post-size: 100000000
-    max-swallow-size: 100000000
