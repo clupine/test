@@ -1,0 +1,25 @@
+#-----------------------------------------
+# KFTC(Korea Financial Telecommunications & Clearings Institute) Adaptor Configuration
+#-----------------------------------------
+network.adaptor.kftc-file.cms.enabled : true
+network.adaptor.kftc-file.cms.hex-mode : false
+network.adaptor.kftc-file.cms.dataframe : 4100
+network.adaptor.kftc-file.cms.remote-host : 127.0.0.1
+network.adaptor.kftc-file.cms.remote-port : 8000
+network.adaptor.kftc-file.cms.recv-temp-file-path : C:/share/recv
+network.adaptor.kftc-file.cms.send-temp-file-path : C:/share/send
+
+#-----------------------------------------
+# Rest Configuration
+#-----------------------------------------
+server.port : 6701
+server.ssl.key-store : classpath:keystore.p12
+server.ssl.key-store-type : PKCS12
+server.ssl.key-store-password : meta1234!
+server.ssl.key-alias : spring
+
+#-----------------------------------------
+# Adaptor Configuration
+#-----------------------------------------
+spring.pid.file : C:/indigoesb/agent/im/pid/TCP_KFTC_CMS_FILE_01_tmp
+spring.autoconfigure.exclude : org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
